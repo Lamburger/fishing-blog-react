@@ -8,7 +8,7 @@ class About extends Component {
             <h1>How it works!</h1>
             <h2>Welcome to the fishing blog!
             This is a simple blog where we fisherman can share our catches
-            and fishing spots with other fisherman! Simply register and loginm,
+            and fishing spots with other fisherman! Simply register and login,
             then you will be able to add a post with a picture of your catch
             and the coordinates!</h2>
           </div>
