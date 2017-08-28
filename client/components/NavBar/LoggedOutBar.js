@@ -10,11 +10,7 @@ const LoggedOutBar = () =>
                         Home
                     </NavLink>
                 </li>
-                <li className="nav-item">
-                    <NavLink exact className="nav-link" activeClassName="activeLink" to='/about'>
-                        How it works
-                    </NavLink>
-                </li>
+
                 <li className="nav-item nav-item-right">
                     <NavLink exact className="nav-link" activeClassName="activeLink" to='/login'>
                         Login

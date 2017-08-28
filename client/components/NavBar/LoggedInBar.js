@@ -19,11 +19,7 @@ class LoggedInBar extends Component {
                         Add Post
                     </NavLink>
                 </li>
-                <li className="nav-item">
-                    <NavLink exact className="nav-link" activeClassName="activeLink" to='/about'>
-                        How it works
-                    </NavLink>
-                </li>
+
                 <li className="nav-item-right">
                     <a className="nav-button" onClick={this.props.onLogout}>
                         Logout

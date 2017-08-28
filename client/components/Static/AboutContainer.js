@@ -10,7 +10,7 @@ class About extends Component {
             This is a simple blog where we fisherman can share our catches
             and fishing spots with other fisherman! Simply register and login,
             then you will be able to add a post with a picture of your catch
-            and the coordinates!</h2>
+            and the coordinates</h2>
           </div>
         )
     }
