@@ -5,11 +5,10 @@ module.exports = {
     entry: {
         app: ["./client/index.js"]
     },
-    output: {
-        path: path.resolve(__dirname, "build"),
-        publicPath: "/assets/",
-        filename: "bundle.js"
-    },
+output: {
+path: path.resolve(__dirname, "server/assets"),
+filename: "bundle.js"
+},
     devServer: {
         contentBase: "./build",
         //host: '192.168.1.5',

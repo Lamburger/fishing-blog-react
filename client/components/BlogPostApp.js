@@ -15,7 +15,8 @@ import { AboutContainer } from './Static/AboutContainer'
 class BlogPostApp extends Component {
     render () {
         const { isLoggedIn } = this.props
-        return <div className="blog-body"><Switch>
+        return <div>
+        <div className="blog-body"><Switch>
             {/* Routes that are no-auth-only routes */}
             <PrivateRoute isAuth={!isLoggedIn} path='/login' redirect='/' component={LoginContainer} />
             <PrivateRoute isAuth={!isLoggedIn} path='/register' redirect='/' component={RegisterContainer} />
@@ -29,6 +30,7 @@ class BlogPostApp extends Component {
             <Route exact path='/about' component={AboutContainer}/>
             <Redirect from='/*' to='/'/>
         </Switch></div>
+        </div>
     }
 }
 
