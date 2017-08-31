@@ -1,24 +1,35 @@
-
+.login-heading{
+    color: #000;
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
 .register {
-    width:430px;
-    margin:auto;
+    background-color: #fcfcfc;
     color: black;
+    border: 1px solid #e2e1e1;
+    padding: 20px;
+    margin-top: 50px;
 }
 
 .register input{
-    margin-top:10px;
-    margin-right:10px;
-
-    height:25px;
-    padding: 5px;
+    color: #666;
+    font-size: 16px;
+    letter-spacing: 1px;
+    height:34px;
+    padding: 8px;
     padding-left: 10px;
+    margin: 15px 0;
+    border-radius: 0;
 }
 
 .register button{
-    height:37px;
-    width: 189px;
+    padding: 5px 30px;
     margin-top: 10px;
     color: white;
+    border-radius: 0;
+    display: inline-block;
 }
 
 .valid-button{

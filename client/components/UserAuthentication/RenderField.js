@@ -7,7 +7,7 @@ const renderField = ({
 }) =>
     <div>
         <div>
-            <input {...input} placeholder={placeholder} type={type} />
+            <input {...input} placeholder={placeholder} type={type} className="form-control" />
             {touched && (
                 (error &&
                     <div className="form-error">

@@ -8,14 +8,17 @@ class Header extends Component {
     render() {
         if (this.props.isLoggedIn)
             return(
-                <div className="nav-bar-container">
+                <div>
                     <LoggedInBar curPath={this.props.location.pathname} />
-                </div>)
+                </div>
+
+            )
         else
             return(
-                <div className="nav-bar-container">
+                <div>
                     <LoggedOutBar />
-                </div>)
+                </div>
+            )
     }
 }
 

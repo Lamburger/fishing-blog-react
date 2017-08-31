@@ -16,7 +16,7 @@ var MongoStore = require('connect-mongo')(session)
 var User = require('./db').User
 
 
-mongoose.connect('mongodb://lam:lam@ds149373.mlab.com:49373/fishingblog',['posts','users']);
+mongoose.connect('mongodb://lam:lam@ds149373.mlab.com:49373/fishingblog',{useMongoClient: true});
 mongoose.connection.on('error', () => {
 	console.error('MongoDB Connection Error. Please make sure that MongoDB is running.')
 	process.exit(1)

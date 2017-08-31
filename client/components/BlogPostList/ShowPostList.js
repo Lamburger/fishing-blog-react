@@ -31,6 +31,18 @@ class ShowPostList extends Component {
 
         return (
             <div>
+                <div className="row">
+                    <div className="col-md-8 col-md-offset-2 text-center">
+                        <div className="text-center">
+                            <h1>How it works!</h1>
+                            <h2>Welcome to the fishing blog!
+                            This is a simple blog where we fisherman can share our catches
+                            and fishing spots with other fisherman! Simply register and login,
+                            then you will be able to add a post with a picture of your catch
+                            and the coordinates</h2>
+                        </div>
+                    </div>
+                </div>
                 {state.posts.map((post,i) => {
                     var date = (new Date(post.date)).toLocaleDateString()
                     if(post._id === this.state.editing) {

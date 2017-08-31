@@ -9,40 +9,48 @@ class RegisterUserForm extends Component {
     render() {
         const { handleSubmit, pristine, reset, submitting, valid, error } = this.props;
         return(
-            <div className="register">
-                <form onSubmit={ handleSubmit }>
+            <div className="row">
+                <div className="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                <div className="register">
+                    <div>
+                        <h2 className="login-heading">Registeration</h2>
+                    </div>
+                    <form onSubmit={ handleSubmit }>
 
-                    <Field      label = "Username"
-                                placeholder = "Username"
-                                name = "username"
-                                component = {renderField}
-                                type="text">
-                    </Field>
-                    <Field      label = "Password"
-                                placeholder = "Password"
-                                name = "password1"
-                                component = {renderField}
-                                type = "password">
-                    </Field>
-                    <Field      label = "Re-Enter Password"
-                                placeholder = "Re-Enter Password"
-                                name = "password2"
-                                component = {renderField}
-                                type = "password">
-                    </Field>
+                        <Field      label = "Username"
+                                    placeholder = "Username"
+                                    name = "username"
+                                    component = {renderField}
+                                    type="text">
+                        </Field>
+                        <Field      label = "Password"
+                                    placeholder = "Password"
+                                    name = "password1"
+                                    component = {renderField}
+                                    type = "password">
+                        </Field>
+                        <Field      label = "Re-Enter Password"
+                                    placeholder = "Re-Enter Password"
+                                    name = "password2"
+                                    component = {renderField}
+                                    type = "password">
+                        </Field>
 
-                    {!valid &&
-                    <button className="invalid-button" type="submit" disabled={submitting}>
-                        Register New Account
-                    </button>
-                    }
-                    {valid &&
-                    <button className="valid-button" type="submit" disabled={submitting}>
-                        Register New Account
-                    </button>
-                    }
-                </form>
+                        {!valid &&
+                        <button className="btn btn-primary btn-lg invalid-button" type="submit" disabled={submitting}>
+                            Register New Account
+                        </button>
+                        }
+                        {valid &&
+                        <button className="btn btn-primary btn-lg valid-button" type="submit" disabled={submitting}>
+                            Register New Account
+                        </button>
+                        }
+                    </form>
+                </div>
             </div>
+        </div>
+                    
         )
     }
 }
